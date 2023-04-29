@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}    
+
+:root {
+
+     /*====> colors  <====*/
+
+    --purple-bg-700: hsl(275, 100%, 8%);
+    --purple-bg-500: hsl(275, 81%, 14%);
+    --purple-bg-300: hsl(273, 100%, 98%);
+    --primary-clr: hsl(275, 41%, 59%);
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(119, 100%, 65%);
+
+
+    /*====> Fonts <====*/
+
+    --ff-primary-navigation:;
+    --ff-body:;
+
+    --fs-700:3.6rem;
+    --fs-600:2.4rem;
+    --fs-500:1.8rem;
+    --fs-400:1.6rem;
+
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul{list-style: none;}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+}
+
+.wrapper{
+    max-height: 1788px;
+    padding-block: 6.7rem;
+}
+
+.container{
+    max-width: 1441px;
+    padding-inline: 13.6rem;
+}
+
+.purple-bg-700{background: var(--purple-bg-700);}
+.purple-bg-500{background: var(--purple-bg-500);}
+.purple-bg-300{background: var(--purple-bg-300);}
+
+.primary-clr{color: var(--primary-clr);}
+.white{color: var(--white);}
+.green{color: var(--green);}
