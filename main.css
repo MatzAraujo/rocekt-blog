@@ -34,7 +34,11 @@ a{
     text-decoration: none;
 }
 
-ul{list-style: none;}
+ul, li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 3.2rem;
+}
 
 html{
     font-size: 62.5%;
@@ -54,10 +58,16 @@ body{
     padding-inline: 13.6rem;
 }
 
+.flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
 .purple-bg-700{background: var(--purple-bg-700);}
 .purple-bg-500{background: var(--purple-bg-500);}
 .purple-bg-300{background: var(--purple-bg-300);}
 
 .primary-clr{color: var(--primary-clr);}
 .white{color: var(--white);}
-.green{color: var(--green);}
+.green{color: var(--green);}        
