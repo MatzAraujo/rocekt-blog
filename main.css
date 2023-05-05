@@ -12,15 +12,16 @@
     --purple-bg-700: hsl(275, 100%, 8%);
     --purple-bg-500: hsl(275, 81%, 14%);
     --purple-bg-300: hsl(273, 100%, 98%);
-    --primary-clr: hsl(275, 41%, 59%);
+    --primary-clr-500:hsl(275, 81%, 14%);
+    --primary-clr-400: hsla(275, 41%, 59%,1);
     --white: hsl(0, 0%, 100%);
     --green: hsl(119, 100%, 65%);
 
 
     /*====> Fonts <====*/
 
-    --ff-primary-navigation:;
-    --ff-body:;
+    /* --ff-primary-navigation:;
+    --ff-body:; */
 
     --fs-700:3.6rem;
     --fs-600:2.4rem;
@@ -45,8 +46,8 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-}
+/* body{
+} */
 
 .wrapper{
     max-height: 1788px;
@@ -64,10 +65,45 @@ body{
     justify-content: space-between;
 }
 
+main{
+    margin-top: 8.7rem;
+}
+
+.even-columns{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 6.4rem;
+}
+
 .purple-bg-700{background: var(--purple-bg-700);}
 .purple-bg-500{background: var(--purple-bg-500);}
 .purple-bg-300{background: var(--purple-bg-300);}
 
-.primary-clr{color: var(--primary-clr);}
+.primary-clr-500{color: var(--primary-clr-500);}
+.primary-clr-400{color: var(--primary-clr-400);}
 .white{color: var(--white);}
-.green{color: var(--green);}        
+.green{color: var(--green);}            
+
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+
+.title{
+    font-size: var(--fs-500);
+    color: var(--primary-clr-500);
+    margin-bottom: .8rem;
+}
+
+.menu li a{
+    font-size: 1.8rem;
+    transition: color .3s;
+    position: relative;
+}
+
+.image{
+    background-position:center ;
+    height: 34.6rem;
+    width: 54.5rem;
+    background: url(./assets/images/home-image.png);
+}
